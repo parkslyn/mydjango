@@ -4,10 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def index(request):
-    all_albums = Album.object.all()
-    
-    return HttpResponse
-
+def post_list(request):
+    return render(request, 'music/post_list.html', {})
 
 
